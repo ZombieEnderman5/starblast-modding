@@ -1,0 +1,86 @@
+return model =
+  name: 'Fork-GL'
+  level: 5
+  model: 17
+  size: 2
+  specs:
+    shield:
+      capacity: [200,270]
+      reload: [5,7]
+    generator:
+      capacity: [150,200]
+      reload: [35,60]
+    ship:
+      mass: 150
+      speed: [110,125]
+      rotation: [75,95]
+      acceleration: [90,110]
+  bodies:
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -10
+        z: 6
+      position:
+        x: [0,0,0,0]
+        y: [0,10,20]
+        z: [-6,-2.4,-6]
+      width: [2.5,5,2.5]
+      height: [0,4,0]
+      texture: 9
+    guns1:
+      section_segments: 12
+      offset:
+        x: 25
+        y: -5
+        z: 0
+      position:
+        x: [-2,-1,-1,-1,0,0,0,0,0]
+        y: [-15,-10,-5,-2.5,0,2.5,5,10,10]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,1,3,3,3,3,3,3,0]
+      height: [0,1,3,3,3,3,3,0,0]
+      texture: [63,63,1]
+      laser:
+        damage: [20,30]
+        rate: 1
+        type: 2
+        speed: [100,120]
+        number: 1
+        error: 0
+    guns2:
+      section_segments: 12
+      offset:
+        x: 10
+        y: -5
+        z: 0
+      position:
+        x: [2,2,2,2,1,0.5,0.25,0,0]
+        y: [-15,-10,-5,-2.5,0,2.5,5,10,10]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,1,3,3,3,3,3,3,0]
+      height: [0,1,3,3,3,3,3,0,0]
+      texture: [63,63,1]
+      laser:
+        damage: [20,30]
+        rate: 1
+        type: 2
+        speed: [100,120]
+        number: 1
+        error: 0
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      length: [0,15,15,15]
+      width: [10,25,20,10]
+      angle: [0,0,0,0]
+      position: [0,2,0,0]
+      texture: 1
+      bump:
+        position: 0
+        size: 2
