@@ -1,0 +1,113 @@
+return model =
+  name: 'P-1'
+  level: 5
+  model: 10
+  size: 1
+  specs:
+    shield:
+      capacity: [285,360]
+      reload: [5.5,7.5]
+    generator:
+      capacity: [110,180]
+      reload: [45,65]
+    ship:
+      mass: 200
+      speed: [90,120]
+      rotation: [50,80]
+      acceleration: [90,120]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-100,-100,-50,-25,0,100,100,100,100]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [15,15,15,15,20,30,30,30,0]
+      height: [10,10,10,10,10,10,10,10,0]
+      texture: [2,1,1,1,1,1,2]
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -195
+        z: 8
+      position:
+        x: [0,0,0,0]
+        y: [20,40,80]
+        z: [2,0,2]
+      width: [5,10,5]
+      height: [0,8,0]
+      texture: 9
+    propellers1:
+      section_segments: 12
+      offset:
+        x: 25
+        y: 120
+        z: 0
+      position:
+        x: [-25,-25,0,0,0,0,0,0,0]
+        y: [-50,-50,-25,-12.5,0,12.5,25,25,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,25,25,25,20,20,20,20,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [2,1,1,1,1,63,17]
+      propeller: true
+    propellers2:
+      section_segments: 12
+      offset:
+        x: 80
+        y: 130
+        z: 0
+      position:
+        x: [-80,-80,-40,-5,0,0,0,0,0]
+        y: [-100,-100,-50,-25,0,25,50,50,45]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [2,1,1,1,1,63,17]
+      propeller: true
+    bumpers:
+      section_segments: 12
+      offset:
+        x: 100
+        y: 70
+        z: 0
+      position:
+        x: [0,0,5,10,5,0,-5]
+        y: [-115,-120,-90,0,20,50,60]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,15,15,15,5,0]
+      height: [0,20,35,35,25,20,0]
+      texture: [2,63,43,1,1]
+      laser:
+        damage: [4,6.25]
+        rate: 6
+        type: 1
+        speed: [180,230]
+        number: 1
+        error: 0
+    gun:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -150
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-45,-50,-25,-12.5,0,35,50,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [2,63,43,43,43,1,2]
+      laser:
+        damage: [20,36]
+        rate: 1
+        type: 2
+        speed: [160,210]
+        number: 1
+        recoil: 75
+        error: 0

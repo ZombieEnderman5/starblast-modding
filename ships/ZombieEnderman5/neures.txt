@@ -1,0 +1,126 @@
+return model =
+  name: 'Neures'
+  level: 5
+  model: 8
+  size: 1
+  specs:
+    shield:
+      capacity: [160,230]
+      reload: [5,7]
+    generator:
+      capacity: [85,150]
+      reload: [30,40]
+    ship:
+      mass: 130
+      speed: [105,135]
+      rotation: [40,53]
+      acceleration: [145,165]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 100
+        z: 0
+      position:
+        x: [15,15,0,0,0,0,0,15,15]
+        y: [-90,-90,-45,-22.5,0,22.5,45,90,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,15,0]
+      texture: [4,3,3,3,3,3,3,4]
+      angle: 90
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 45
+        z: 10
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-45,-40,-25,0,5]
+        z: [-5,-5,0,-5,0,0]
+      width: [0,6,11,0,0]
+      height: [0,10,15,5,0]
+      texture: 9
+      angle: 180
+    points1:
+      section_segments: 12
+      offset:
+        x: 80
+        y: 0
+        z: 0
+      position:
+        x: [0,-10,-5,0,5,10,10,10,10]
+        y: [-50,-50,-25,-12.5,0,12.5,75,150,145]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,0,15,15,15,15,15,15,0]
+      height: [0,0,15,15,15,15,15,15,0]
+      texture: [4,63,3,3,3,3,3,17]
+      propeller: true
+    points2:
+      section_segments: 12
+      offset:
+        x: 70
+        y: 60
+        z: 0
+      position:
+        x: [0,-20,0,10,20,20,20,20,20]
+        y: [-50,-50,-25,-12.5,0,4,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,0,15,15,15,15,15,15,0]
+      height: [0,0,15,15,15,15,15,15,0]
+      texture: [4,63,3,3,3,3,3,4]
+    points3:
+      section_segments: 12
+      offset:
+        x: 70
+        y: 30
+        z: 0
+      position:
+        x: [0,-15,0,10,20,20,20,20,20]
+        y: [-50,-50,-25,-12.5,0,4,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,0,15,15,15,15,15,15,0]
+      height: [0,0,15,15,15,15,15,15,0]
+      texture: [4,63,3,3,3,3,3,4]
+    guns1:
+      section_segments: 12
+      offset:
+        x: 30
+        y: 80
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-35,-40,-25,-12.5,0,12.5,25,40,35]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,15,0]
+      texture: [4,63,3,3,3,3,63,17]
+      propeller: true
+      laser:
+        damage: [6,8]
+        rate: 6
+        type: 1
+        speed: [165,195]
+        number: 1
+    guns2:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 80
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-35,-40,-25,-12.5,0,12.5,25,40,35]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,15,0]
+      texture: [4,63,3,3,3,3,63,17]
+      propeller: true
+      laser:
+        damage: [6,8]
+        rate: 6
+        type: 1
+        speed: [165,195]
+        number: 1

@@ -1,0 +1,185 @@
+return model =
+  name: 'Aecas'
+  level: 5
+  model: 11
+  size: 1.5
+  specs:
+    shield:
+      capacity: [300,375]
+      reload: [6.5,9]
+    generator:
+      capacity: [165,235]
+      reload: [70,90]
+    ship:
+      mass: 275
+      speed: [60,90]
+      rotation: [70,90]
+      acceleration: [70,100]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-185,-175,-87.5,-43.75,0,43.75,87.5,175,195]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,40,50,60,60,60,60,20,0]
+      height: [0,10,20,30,30,30,30,10,0]
+      texture: 3
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -145
+        z: 10
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-10,10,30,60]
+        z: [0,0,0,5,10]
+      width: [0,10,15,10,0]
+      height: [0,5,10,5,0]
+      texture: 9
+    propellers:
+      section_segments: 12
+      offset:
+        x: 98
+        y: 185
+        z: 20
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-10,-5,-2.5,0,2.5,5,10,7]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,5,5,5,5,5,5,0]
+      height: [0,5,5,5,5,5,5,5,0]
+      texture: [3,3,3,3,3,3,63,17]
+      propeller: true
+    guns1:
+      section_segments: 12
+      offset:
+        x: 165
+        y: -10
+        z: 3
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-67,-70,-35,-17.5,0,2.5,5,10,7]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,5,5,5,5,5,5,0]
+      height: [0,5,5,5,5,5,5,5,0]
+      texture: [4,63,3,3,3,3,63,17]
+      propeller: true
+      laser:
+        damage: [4,6]
+        rate: 7
+        type: 1
+        speed: [175,205]
+        number: 1
+    guns2:
+      section_segments: 12
+      offset:
+        x: 135
+        y: -10
+        z: -2
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-55,-60,-30,-15,0,2.5,5,10,7]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [4,63,3,3,3,3,63,17]
+      propeller: true
+      laser:
+        damage: [7,10]
+        rate: 4
+        type: 1
+        speed: [160,190]
+        number: 1
+    guns3:
+      section_segments: 12
+      offset:
+        x: 105
+        y: -10
+        z: 2
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-75,-80,-40,-20,0,2.5,5,10,7]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [4,63,3,3,3,3,63,17]
+      propeller: true
+      laser:
+        damage: [7,10]
+        rate: 4
+        type: 1
+        speed: [160,190]
+        number: 1
+    guns4:
+      section_segments: 12
+      offset:
+        x: 50
+        y: -150
+        z: 3
+      position:
+        x: [0,0,0,0,0,-3.75,-7.5,-15,-15]
+        y: [-67,-70,-35,-17.5,0,2.5,5,10,7]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,5,5,5,5,5,5,0]
+      height: [0,5,5,5,5,5,5,5,0]
+      texture: [4,63,3,3,3,3,3,3]
+      laser:
+        damage: [4,6]
+        rate: 7
+        type: 1
+        speed: [175,205]
+        number: 1
+    guns5:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -140
+        z: -20
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-75,-80,-40,-20,0,2.5,5,10,10]
+        z: [0,0,5,10,20,20,20,20,20]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [4,63,3]
+      laser:
+        damage: [7,10]
+        rate: 4
+        type: 1
+        speed: [160,190]
+        number: 1
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 0
+        y: -30
+        z: 20
+      length: [100,70]
+      width: [60,60,60]
+      angle: [-5,-5]
+      position: [0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 10
+    wing2:
+      doubleside: true
+      offset:
+        x: 0
+        y: 160
+        z: 0
+      length: [100,70]
+      width: [30,30,30]
+      angle: [10,85]
+      position: [0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 10

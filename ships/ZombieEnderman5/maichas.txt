@@ -1,0 +1,124 @@
+return model =
+  name: 'Maichas'
+  level: 3
+  model: 4
+  size: 1
+  specs:
+    shield:
+      capacity: [160,230]
+      reload: [5,7]
+    generator:
+      capacity: [80,130]
+      reload: [25,40]
+    ship:
+      mass: 150
+      speed: [125,150]
+      rotation: [65,90]
+      acceleration: [95,125]
+  bodies:
+    main:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-290,-250,-85,-60,-40,0,70,70]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,40,35,30,30,30,30,0]
+      height: [0,20,15,10,10,10,1,0]
+      texture: [63,63,1,1,1,63]
+      propeller: false
+    guns:
+      section_segments: 12
+      offset:
+        x: 60
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-190,-200,-85,-60,-40,0,120,120]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,0]
+      texture: [4,4,3,3,3,2]
+      propeller: false
+      laser:
+        damage: [6,10]
+        rate: 6
+        type: 1
+        speed: [100,150]
+        number: 1
+        error: 0
+    engines1:
+      section_segments: 12
+      offset:
+        x: 60
+        y: 320
+        z: 0
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-200,-200,-85,-60,-40,-40]
+        z: [0,0,0,0,0,0]
+      width: [0,10,10,10,10,0]
+      height: [0,10,10,10,10,0]
+      texture: [63,63,2,2,17]
+      propeller: true
+    engines2:
+      section_segments: 12
+      offset:
+        x: 120
+        y: 310
+        z: 0
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-200,-200,-85,-60,-40,-40]
+        z: [0,0,0,0,0,0]
+      width: [0,10,10,10,10,0]
+      height: [0,2,10,10,10,0]
+      texture: [63,63,2,2,17]
+      propeller: true
+    engines3:
+      section_segments: 12
+      offset:
+        x: 25
+        y: 340
+        z: 0
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-200,-200,-85,-60,-40,-40]
+        z: [0,0,0,0,0,0]
+      width: [0,10,10,10,10,0]
+      height: [0,10,10,10,10,0]
+      texture: [63,63,2,2,17]
+      propeller: true
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -230
+        z: 10
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-10,10,30,60]
+        z: [0,0,0,0,0]
+      width: [0,10,15,10,0]
+      height: [0,18,25,18,0]
+      propeller: false
+      texture: 9
+  wings:
+    main:
+      length: [100,40]
+      width: [100,50,40]
+      angle: [0,0]
+      position: [0,-20,-10]
+      doubleside: true
+      offset:
+        x: 0
+        y: 115
+        z: 0
+      bump:
+        position: 30
+        size: 15
+      texture: [63]

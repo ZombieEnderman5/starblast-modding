@@ -1,0 +1,129 @@
+return model =
+  name: 'Fyris'
+  level: 5
+  model: 15
+  size: 2.5
+  specs:
+    shield:
+      capacity: [200,300]
+      reload: [5.5,7.5]
+    generator:
+      capacity: [200,300]
+      reload: [80,95]
+    ship:
+      mass: 210
+      speed: [75,100]
+      rotation: [85,110]
+      acceleration: [80,110]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-70,-80,-25,-12.5,0,12.5,25,50,40]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,30,30,30,30,30,30,0]
+      height: [0,15,30,30,30,30,30,30,0]
+      texture: [2,63,48,48,48,48,63,17]
+      propeller: true
+      laser:
+        damage: [30,45]
+        rate: 3
+        type: 2
+        speed: [120,170]
+        number: 1
+        error: 0
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -100
+        z: 20
+      position:
+        x: [0,0,0,0]
+        y: [20,40,80]
+        z: [-6,-2,2]
+      width: [5,10,10]
+      height: [0,8,8]
+      texture: 9
+    supports:
+      section_segments: 12
+      offset:
+        x: 50
+        y: -10
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-25,-25,-12.5,-6.25,0,6.25,12.5,25,25]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,10,0]
+      texture: [2,48,1,1,1,48,1,2]
+      angle: 90
+    propellers:
+      section_segments: 12
+      offset:
+        x: 65
+        y: 40
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-25,-12.5,0,12.5,25,50,40]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,15,0]
+      texture: [2,42,1,1,1,1,63,17]
+      propeller: true
+    guns:
+      section_segments: 12
+      offset:
+        x: 65
+        y: -60
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-40,-50,-25,-12.5,0,12.5,25,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,15,0]
+      texture: [2,63,43,43,43,43,43,2]
+      laser:
+        damage: [6,12]
+        rate: 6
+        type: 1
+        speed: [150,200]
+        number: 1
+        error: 0
+  wings:
+    wing1:
+      offset:
+        x: 0
+        y: 0
+        z: 30
+      doubleside: true
+      length: [200]
+      width: [20,20]
+      angle: [90]
+      position: [0,0]
+      texture: 1
+      bump:
+        position: 0
+        size: 0
+    wing2:
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      doubleside: true
+      length: [200]
+      width: [20,20]
+      angle: [-40,0]
+      position: [0,0]
+      texture: 1
+      bump:
+        position: 0
+        size: 0

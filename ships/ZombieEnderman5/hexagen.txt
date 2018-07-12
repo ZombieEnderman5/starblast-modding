@@ -1,0 +1,122 @@
+return model =
+  name: 'Hexagen'
+  level: 3
+  model: 5
+  size: 1.1
+  specs:
+    shield:
+      capacity: [160,210]
+      reload: [3.5,5.5]
+    generator:
+      capacity: [90,120]
+      reload: [20,30]
+    ship:
+      mass: 150
+      speed: [100,115]
+      rotation: [60,80]
+      acceleration: [85,105]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-150,-150,-75,-37.5,0,37.5,75,150,150]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,20,30,40,20,25,30,0]
+      height: [0,10,20,20,25,20,20,20,0]
+      texture: [2,42,42,42,42,42,42,2]
+    cockpit:
+      section_segments: 10
+      offset:
+        x: 0
+        y: -120
+        z: 10
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-10,0,10,30]
+        z: [0,0,0,0,8]
+      width: [0,11,12,10,0]
+      height: [0,10,11,9,0]
+      texture: 9
+    engines1:
+      section_segments: 12
+      offset:
+        x: 40
+        y: 130
+        z: 35
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-30,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,15,0]
+      height: [0,20,20,20,20,20,20,15,0]
+      texture: [43,43,43,43,43,43,63,17]
+      propeller: true
+    engines2:
+      section_segments: 12
+      offset:
+        x: 40
+        y: 130
+        z: -35
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-30,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,15,0]
+      height: [0,20,20,20,20,20,20,15,0]
+      texture: [43,43,43,43,43,43,63,17]
+      propeller: true
+    engines3:
+      section_segments: 12
+      offset:
+        x: 130
+        y: 130
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-30,-15,-7.5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,15,0]
+      height: [0,20,20,20,20,20,20,15,0]
+      texture: [2,63,43,43,43,43,63,17]
+      propeller: true
+      angle: 3
+      laser:
+        damage: [5,7]
+        rate: 4
+        type: 1
+        speed: [160,190]
+        number: 1
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 20
+        y: 75
+        z: 0
+      length: [100]
+      width: [90,30,40]
+      angle: [0,20]
+      position: [30,60,0]
+      texture: 1
+      bump:
+        position: 30
+        size: 15
+    wing2:
+      doubleside: true
+      offset:
+        x: 40
+        y: 123
+        z: -30
+      length: [0,20,20,20]
+      width: [0,20,30,30,20]
+      angle: [0,90,90,90]
+      position: [0,0,0,0,0]
+      texture: 10
+      bump:
+        position: 0
+        size: 0

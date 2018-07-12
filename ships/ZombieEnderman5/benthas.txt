@@ -1,0 +1,133 @@
+return model =
+  name: 'Benthas'
+  level: 3
+  model: 1
+  size: 1
+  specs:
+    shield:
+      capacity: [140,190]
+      reload: [3,5]
+    generator:
+      capacity: [100,175]
+      reload: [40,55]
+    ship:
+      mass: 150
+      speed: [115,140]
+      rotation: [50,75]
+      acceleration: [90,110]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-200,-200,-50,-25,0,25,50,100,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,60,60,60,60,60,60,0]
+      height: [0,10,30,30,30,30,30,30,0]
+      texture: [1,1,1,1,1,1,63,17]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -170
+        z: 10
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-20,-10,0,30,40]
+        z: [-5,0,0,0,0]
+      width: [0,10,10,10,0]
+      height: [0,10,15,12,0]
+      texture: 9
+    guns1supports:
+      section_segments: 12
+      offset:
+        x: 95
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-25,-12.5,0,12.5,25,30,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,20,20,20,20,20,20,20,0]
+      texture: 1
+      angle: 90
+    guns1:
+      section_segments: 12
+      offset:
+        x: 75
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-45,-50,-25,-12.5,0,12.5,25,50,45]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [2,63,1,1,1,1,63,17]
+      propeller: true
+      laser:
+        damage: [3,5]
+        rate: 7
+        type: 1
+        speed: [185,215]
+        number: 1
+    guns2:
+      section_segments: 12
+      offset:
+        x: 105
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-45,-50,-25,-12.5,0,12.5,25,50,45]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [2,63,1,1,1,1,63,17]
+      propeller: true
+      laser:
+        damage: [3,5]
+        rate: 7
+        type: 1
+        speed: [185,215]
+        number: 1
+    guns3:
+      section_segments: 12
+      offset:
+        x: 15
+        y: -250
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-45,-50,-25,-12.5,0,12.5,25,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [2,63,1]
+      laser:
+        damage: [3,5]
+        rate: 7
+        type: 1
+        speed: [185,215]
+        number: 1
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 80
+        y: 0
+        z: -75
+      length: [100,100]
+      width: [0,100,0]
+      angle: [50,130]
+      position: [0,0,0]
+      texture: 1
+      bump:
+        position: 0
+        size: 2

@@ -1,0 +1,40 @@
+return model =
+  name: 'Arrowhead'
+  level: 6
+  model: 2
+  size: 2.5
+  specs:
+    shield:
+      capacity: [240,340]
+      reload: [5,7]
+    generator:
+      capacity: [125,205]
+      reload: [60,80]
+    ship:
+      mass: 250
+      speed: [75,95]
+      rotation: [55,75]
+      acceleration: [100,150]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-90,-100,-50,-25,0,25,50,100,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,40,20,20,40,25,30,0]
+      height: [0,20,40,20,20,40,25,30,0]
+      texture: [2,63,43,43,43,1,1,17]
+      propeller: true
+      laser:
+        damage: [80,100]
+        rate: 4
+        type: 2
+        speed: [200,250]
+        recoil: 200
+        number: 1
+        error: 0

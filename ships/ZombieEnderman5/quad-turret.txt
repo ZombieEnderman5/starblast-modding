@@ -1,0 +1,131 @@
+return model =
+  name: 'Quad-Turret'
+  level: 2
+  model: 2
+  size: 1.2
+  specs:
+    shield:
+      capacity: [100,165]
+      reload: [3,6]
+    generator:
+      capacity: [50,90]
+      reload: [15,22]
+    ship:
+      mass: 110
+      speed: [110,135]
+      rotation: [70,90]
+      acceleration: [95,115]
+  bodies:
+    main:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-120,-100,-85,-60,-40,0,70,50]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,30,30,30,30,30,30,0]
+      height: [0,30,30,30,30,30,30,0]
+      texture: [63,63,10,10,10,10,17]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -95
+        z: 25
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-10,0,20,30,40]
+        z: [0,0,0,0,0]
+      width: [0,10,10,10,0]
+      height: [0,12,12,12,0]
+      texture: [9]
+    turretsupport:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -50
+        z: 30
+      position:
+        x: [0,0,0]
+        y: [-60,0,60]
+        z: [0,0,0]
+      width: [7,7,7]
+      height: [0,60,0]
+      texture: [1,1]
+      propeller: false
+      angle: 90
+    turrets1:
+      section_segments: 8
+      offset:
+        x: 30
+        y: -30
+        z: 30
+      position:
+        x: [1,1,1,1,1]
+        y: [-55,-60,-20,-20]
+        z: [0,0,0,0,0]
+      width: [0,7,7,7,0]
+      height: [0,7,7,7,0]
+      texture: [1,1]
+      propeller: false
+      laser:
+        damage: [3,7]
+        rate: 4
+        type: 1
+        speed: [110,130]
+        number: 1
+        error: 0
+    turrets2:
+      section_segments: 8
+      offset:
+        x: 15
+        y: -30
+        z: 60
+      position:
+        x: [1,1,1,1,1]
+        y: [-55,-60,-20,-20]
+        z: [0,0,0,0,0]
+      width: [0,7,7,7,0]
+      height: [0,7,7,7,0]
+      texture: [1,1]
+      propeller: false
+      laser:
+        damage: [3,7]
+        rate: 4
+        type: 1
+        speed: [110,130]
+        number: 1
+        error: 0
+    expropellers:
+      section_segments: 8
+      offset:
+        x: 70
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-100,-100,-85,-60,-40,0,70,50]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,0]
+      texture: [63,63,10,10,10,10,17]
+      propeller: true
+    propellersjoin:
+      section_segments: 8
+      offset:
+        x: 125
+        y: -15
+        z: 5
+      position:
+        x: [0,0,0,0]
+        y: [-100,-80,-65,-65]
+        z: [0,0,0,0]
+      width: [5,5,5,5]
+      height: [5,5,5,0]
+      texture: [1,1,1]
+      angle: 90
+      propeller: false

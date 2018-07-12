@@ -1,0 +1,120 @@
+return model =
+  name: 'Arcadian'
+  level: 6
+  model: 11
+  size: 1.75
+  specs:
+    shield:
+      capacity: [235,410]
+      reload: [7.5,10.5]
+    generator:
+      capacity: [150,210]
+      reload: [100,130]
+    ship:
+      mass: 200
+      speed: [80,110]
+      rotation: [45,65]
+      acceleration: [85,125]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-120,-100,-50,-25,0,25,50,100,95]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,20,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [42,42,1,1,1,1,63,17]
+      propeller: true
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -82
+        z: 5
+      position:
+        x: [0,0,0,0]
+        y: [-25,-8,20,35]
+        z: [0,0,0,-2]
+      width: [0,10,10,0]
+      height: [0,12,15,5]
+      texture: 9
+    guns1$2supports:
+      section_segments: 12
+      offset:
+        x: 60
+        y: 77
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-25,-12.5,0,10,20,40,40]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,20,0]
+      height: [0,7,10,10,10,10,10,10,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 90
+    guns1:
+      section_segments: 12
+      offset:
+        x: 95
+        y: 80
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-37,-40,-20,-10,0,5,10,20,17]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,5,5,5,5,5,5,0]
+      height: [0,5,5,5,5,5,5,5,0]
+      texture: [2,63,1,1,1,1,63,17]
+      propeller: true
+      laser:
+        damage: [3,4]
+        rate: 7
+        type: 1
+        speed: [180,210]
+        number: 1
+    guns2:
+      section_segments: 12
+      offset:
+        x: 80
+        y: 80
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-37,-40,-20,-10,0,5,10,20,17]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,5,5,5,5,5,5,0]
+      height: [0,5,5,5,5,5,5,5,0]
+      texture: [2,63,1,1,1,1,63,17]
+      propeller: true
+      laser:
+        damage: [3,4]
+        rate: 7
+        type: 1
+        speed: [180,210]
+        number: 1
+    cannons:
+      section_segments: 12
+      offset:
+        x: 40
+        y: -120
+        z: 0
+      position:
+        x: [0,0,0,-2.5,-5,-10,-20,-40,-40]
+        y: [-45,-50,-25,-12.5,0,12.5,25,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,20,0]
+      height: [0,10,10,10,10,10,10,7,0]
+      texture: [2,63,42,42,42,42,42,2]
+      laser:
+        damage: [50,70]
+        rate: 2
+        type: 2
+        speed: [170,200]
+        recoil: 220
+        number: 1
+        error: 0

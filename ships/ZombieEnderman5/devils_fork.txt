@@ -1,0 +1,202 @@
+return model =
+  name: 'Devils Fork'
+  level: 6
+  model: 20
+  size: 2.2
+  specs:
+    shield:
+      capacity: [250,350]
+      reload: [6,8]
+    generator:
+      capacity: [210,280]
+      reload: [100,150]
+    ship:
+      mass: 370
+      speed: [80,110]
+      rotation: [90,110]
+      acceleration: [70,115]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-95,-100,-50,-25,0,25,50,100,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,15,25,15,15,20,20,0]
+      height: [0,10,15,25,15,15,20,20,0]
+      texture: [2,10,10,10,10,10,63,17]
+      propeller: true
+      laser:
+        damage: [15,25]
+        rate: 5.5
+        type: 2
+        speed: [175,215]
+        recoil: 60
+        number: 1
+        error: 0
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -120
+        z: 13
+      position:
+        x: [0,0,0,0]
+        y: [20,40,80]
+        z: [-4,-6,2]
+      width: [5,10,5]
+      height: [0,8,0]
+      texture: 9
+    cannons:
+      section_segments: 12
+      offset:
+        x: 60
+        y: -70
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-95,-100,-50,-25,0,25,50,100,95]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,13,13,13,13,15,10,0]
+      height: [0,10,13,13,13,13,15,10,0]
+      texture: [2,10,10,10,10,10,63,17]
+      propeller: true
+      laser:
+        damage: [15,25]
+        rate: 5.5
+        type: 2
+        speed: [175,215]
+        recoil: 60
+        number: 1
+        error: 0
+    deco_inside1:
+      section_segments: 12
+      offset:
+        x: 50
+        y: -30
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,5,5,5,5,5,5,0]
+      height: [0,10,5,5,5,5,5,5,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 90
+    deco_inside2:
+      section_segments: 12
+      offset:
+        x: 50
+        y: -50
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,5,5,5,5,5,5,0]
+      height: [0,10,5,5,5,5,5,5,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 90
+    deco_inside3:
+      section_segments: 12
+      offset:
+        x: 50
+        y: -70
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,5,5,5,5,5,5,0]
+      height: [0,10,5,5,5,5,5,5,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 90
+    deco_inside4:
+      section_segments: 12
+      offset:
+        x: 50
+        y: -90
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,5,5,5,5,5,5,0]
+      height: [0,10,5,5,5,5,5,5,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 90
+    deco_outside1:
+      section_segments: 12
+      offset:
+        x: 70
+        y: -30
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,5,5,5,5,5,5,0]
+      height: [0,10,5,5,5,5,5,5,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 270
+    deco_outside2:
+      section_segments: 12
+      offset:
+        x: 70
+        y: -50
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,5,5,5,5,5,5,0]
+      height: [0,10,5,5,5,5,5,5,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 270
+    deco_outside3:
+      section_segments: 12
+      offset:
+        x: 70
+        y: -70
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,5,5,5,5,5,5,0]
+      height: [0,10,5,5,5,5,5,5,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 270
+    deco_outside4:
+      section_segments: 12
+      offset:
+        x: 70
+        y: -90
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-20,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,5,5,5,5,5,5,0]
+      height: [0,10,5,5,5,5,5,5,0]
+      texture: [2,1,1,1,1,1,1,2]
+      angle: 270
+  wings:
+    cannons_joins:
+      doubleside: true
+      offset:
+        x: 0
+        y: 20
+        z: 0
+      length: [61]
+      width: [20,12]
+      angle: [0]
+      position: [30,-50]
+      texture: 1
+      bump:
+        position: 10
+        size: 10

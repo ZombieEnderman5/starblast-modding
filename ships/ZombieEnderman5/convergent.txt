@@ -1,0 +1,82 @@
+return model =
+  name: 'Convergent'
+  level: 6
+  model: 8
+  size: 1.25
+  specs:
+    shield:
+      capacity: [210,310]
+      reload: [6.5,8.5]
+    generator:
+      capacity: [110,170]
+      reload: [60,80]
+    ship:
+      mass: 200
+      speed: [90,115]
+      rotation: [65,85]
+      acceleration: [95,145]
+  bodies:
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -60
+        z: 25
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-20,10,30,40]
+        z: [-22,-10,0,0,0,0,0]
+      width: [0,12,15,10,0]
+      height: [0,12,18,12,0]
+      propeller: false
+      texture: 9
+    point:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-100,-50,-25,-12.5,0,22.5,45,90,80]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,30,30,30,30,30,30,30,0]
+      texture: [63,1,1,1,1,1,63,17]
+      propeller: true
+    laser_bumpers:
+      section_segments: 12
+      offset:
+        x: 85
+        y: 40
+        z: 0
+      position:
+        x: [-30,-30,-10,0,-10,-20,-20]
+        y: [-175,-180,-90,0,20,50,45]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,20,25,30,10,0]
+      height: [0,40,70,70,50,30,0]
+      texture: [2,63,10,10,63,17]
+      propeller: true
+      angle: 1
+      laser:
+        damage: [6,12]
+        rate: 8
+        type: 1
+        speed: [120,170]
+        number: 1
+        error: 0
+    lb_to_point_joins:
+      section_segments: 12
+      offset:
+        x: 50
+        y: 55
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-25,-25,-12.5,-6.25,0,6.25,12.5,25,25]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,16,22.5,22.5,22.5,22.5,22.5,22.5,0]
+      texture: [2,63,1,1,63,63,1,2]
+      angle: 90

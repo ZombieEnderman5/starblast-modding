@@ -1,0 +1,122 @@
+return model =
+  name: 'Zares'
+  level: 3
+  model: 1
+  size: 1
+  specs:
+    shield:
+      capacity: [100,135]
+      reload: [4,7]
+    generator:
+      capacity: [55,90]
+      reload: [16,20]
+    ship:
+      mass: 130
+      speed: [105,135]
+      rotation: [60,85]
+      acceleration: [110,130]
+  bodies:
+    engines:
+      section_segments: 12
+      offset:
+        x: 30
+        y: 0
+        z: -10
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-10,-10,5,-2.5,0,17.5,35,70,60]
+        z: [-10,-10,-5,-5,-5,0,0,0,0]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,30,30,30,30,30,30,30,0]
+      texture: [1,1,1,1,1,1,11,17]
+      propeller: true
+    enginescurve1:
+      section_segments: 12
+      offset:
+        x: 30
+        y: -80
+        z: -10
+      position:
+        x: [-30,-30,-30,-30,-30,-30,-10,0,0]
+        y: [15,15,15,15,15,17.5,35,70,70]
+        z: [-17,-17,-17,-17,-17,-17,-17,-10,-10]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,30,30,30,30,30,30,30,0]
+      texture: 1
+    enginescurve2:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -80
+        z: -10
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [0,0,0,0,0,10,20,40,40]
+        z: [-20,-20,-20,-20,-20,-17,-17,-10,-10]
+      width: [0,20,20,20,20,30,30,30,0]
+      height: [0,20,20,20,30,30,30,20,0]
+      texture: 1
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -50
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-20,0,30,40]
+        z: [0,0,0,0,0]
+      width: [0,18,25,18,0]
+      height: [0,18,25,18,0]
+      texture: 9
+      propeller: false
+    bumpers:
+      section_segments: 8
+      offset:
+        x: 130
+        y: 0
+        z: 0
+      position:
+        x: [-5,0,5,10,5,0,-5]
+        y: [-85,-80,-40,0,20,50,55]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,15,15,15,5,0]
+      height: [0,20,35,35,25,15,0]
+      texture: [3,2,63,2,2]
+      angle: 0
+    lasers:
+      section_segments: 12
+      offset:
+        x: 127
+        y: -105
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-25,-30,-20,0,30,30,30]
+        z: [0,0,0,0,0,0,0]
+      width: [0,5,7,7,7,5,0]
+      height: [0,5,7,7,7,5,0]
+      texture: [4,4,63,3,3,3]
+      angle: 5
+      laser:
+        damage: [5,7]
+        rate: 8
+        type: 1
+        speed: [185,215]
+        number: 1
+        error: 0
+  wings:
+    main:
+      length: [100,40]
+      width: [100,50,40]
+      angle: [0,0]
+      position: [0,20,10]
+      doubleside: true
+      offset:
+        x: 0
+        y: -40
+        z: 0
+      bump:
+        position: 30
+        size: 15
+      texture: [42]

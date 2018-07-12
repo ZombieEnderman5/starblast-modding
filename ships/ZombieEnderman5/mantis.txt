@@ -1,0 +1,178 @@
+return model =
+  name: 'Mantis'
+  level: 5
+  model: 6
+  size: 1
+  specs:
+    shield:
+      capacity: [230,330]
+      reload: [5,7]
+    generator:
+      capacity: [140,190]
+      reload: [40,55]
+    ship:
+      mass: 250
+      speed: [90,100]
+      rotation: [55,85]
+      acceleration: [95,125]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-90,-100,-50,-25,0,25,50,100,100]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,40,60,60,60,40,60,0]
+      height: [0,30,40,40,40,40,40,40,0]
+      texture: [4,63,3,3,3,3,3,3]
+      laser:
+        damage: [30,50]
+        rate: 1
+        type: 2
+        speed: [180,210]
+        recoil: 85
+        number: 1
+        error: 0
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -115
+        z: 40
+      position:
+        x: [0,0,0,0]
+        y: [20,40,80]
+        z: [-11,-10,-3]
+      width: [10,15,10]
+      height: [0,10,0]
+      texture: 9
+    engines1:
+      section_segments: 12
+      offset:
+        x: 40
+        y: 200
+        z: 0
+      position:
+        x: [-5,-5,0,0,0,0,0,0,0]
+        y: [-100,-100,-50,-25,0,25,50,100,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,20,0]
+      height: [0,20,20,20,20,20,20,20,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+    guns1:
+      section_segments: 12
+      offset:
+        x: 70
+        y: -100
+        z: -7
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-45,-50,-25,-12.5,0,6.25,12.5,25,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,10,10,10,10,10,0]
+      height: [0,5,10,10,10,10,10,10,0]
+      texture: [4,63,3,3,3,3,3,17]
+      propeller: true
+      laser:
+        damage: [4,6]
+        rate: 6
+        type: 1
+        speed: [160,190]
+        number: 1
+        error: 0
+    guns2:
+      section_segments: 12
+      offset:
+        x: 45
+        y: -100
+        z: -9
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-45,-50,-25,-12.5,0,6.25,12.5,25,25]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,10,10,10,10,10,0]
+      height: [0,5,10,10,10,10,10,10,0]
+      texture: [4,63,3,3,3,3,3,4]
+      laser:
+        damage: [4,6]
+        rate: 6
+        type: 1
+        speed: [160,190]
+        number: 1
+        error: 0
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 30
+        y: 0
+        z: 25
+      length: [70,70]
+      width: [100,100,80]
+      angle: [0,-50]
+      position: [0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 10
+    wing2:
+      doubleside: true
+      offset:
+        x: 0
+        y: 230
+        z: 0
+      length: [100,70]
+      width: [60,60,60]
+      angle: [0,0]
+      position: [0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 10
+    wing3:
+      doubleside: true
+      offset:
+        x: 110
+        y: 220
+        z: -75
+      length: [100,100]
+      width: [80,80,80]
+      angle: [50,130]
+      position: [0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 2
+    wing4:
+      doubleside: true
+      offset:
+        x: 30
+        y: -85
+        z: 0
+      length: [20,40]
+      width: [30,30,30]
+      angle: [0,5]
+      position: [0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 10
+    wing5:
+      doubleside: true
+      offset:
+        x: 72
+        y: -90
+        z: -20
+      length: [30,30]
+      width: [40,40,40]
+      angle: [50,130]
+      position: [0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 2

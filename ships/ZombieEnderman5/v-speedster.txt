@@ -1,0 +1,128 @@
+return model =
+  name: 'V-Speedster'
+  level: 6
+  model: 19
+  size: 1.5
+  specs:
+    shield:
+      capacity: [220,310]
+      reload: [5.5,7.75]
+    generator:
+      capacity: [120,160]
+      reload: [50,80]
+    ship:
+      mass: 200
+      speed: [115,140]
+      rotation: [70,90]
+      acceleration: [100,155]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-25,-12.5,0,12.5,25,50,45]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [10,10,20,15,15,15,15,10,0]
+      height: [10,10,10,10,10,10,10,10,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -90
+        z: 10
+      position:
+        x: [0,0,0,0]
+        y: [20,40,60]
+        z: [-1,-4,-1]
+      width: [5,8,7]
+      height: [0,8,0]
+      texture: 9
+    propellers:
+      section_segments: 12
+      offset:
+        x: 80
+        y: 90
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-10,-10,-5,-2.5,0,1.75,3.5,7,4]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,7,7,7,7,7,7,5,0]
+      height: [0,0,7,7,7,7,7,5,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+      angle: 5
+    main_cannon:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -60
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-5,-10,-5,-2.5,0,2.5,5,10,10]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,10]
+      height: [0,10,10,10,10,10,10,10,10]
+      texture: [4,63,3,3,3,3,3,4]
+      laser:
+        damage: [10,15]
+        rate: 4
+        type: 2
+        speed: [130,220]
+        number: 1
+        error: 0
+    side_cannons:
+      section_segments: 12
+      offset:
+        x: 50
+        y: 30
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-17,-20,-10,-5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,7,10,10,10,10,10,0]
+      height: [0,5,7,10,10,10,10,0,0]
+      texture: [4,63,3,3,3,3,3,4]
+      laser:
+        damage: [6,8]
+        rate: 10
+        type: 1
+        speed: [150,240]
+        number: 1
+        error: 5
+    main_cannon_spikes:
+      section_segments: 12
+      offset:
+        x: 40
+        y: -30
+        z: 0
+      position:
+        x: [-25,-20,-10,-5,-10,-20,-30,-40,-40]
+        y: [-65,-50,-25,-12.5,0,5,10,20,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,7,10,10,10,10,10,0]
+      height: [0,5,7,10,10,10,10,10,0]
+      texture: [63,3,3,3,3,3,3,4]
+  wings:
+    main:
+      doubleside: true
+      offset:
+        x: 0
+        y: 50
+        z: 0
+      length: [100]
+      width: [40,15]
+      angle: [0]
+      position: [-50,50]
+      texture: 3
+      bump:
+        position: 10
+        size: 20

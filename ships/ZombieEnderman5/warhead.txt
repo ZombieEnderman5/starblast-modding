@@ -1,0 +1,134 @@
+return model =
+  name: 'Warhead'
+  level: 5
+  model: 9
+  size: 1
+  specs:
+    shield:
+      capacity: [200,280]
+      reload: [6,8]
+    generator:
+      capacity: [100,170]
+      reload: [50,65]
+    ship:
+      mass: 230
+      speed: [70,100]
+      rotation: [75,110]
+      acceleration: [55,85]
+  bodies:
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -20
+        z: 3
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-50,-40,-25,0,5]
+        z: [-5,0,0,5,9,9]
+      width: [0,10,15,10,0]
+      height: [0,5,7.5,8,0]
+      texture: 9
+    propellers1:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 80
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-15,-15,-7.5,-3.75,0,2.5,5,10,5]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,15,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+    guns1:
+      section_segments: 12
+      offset:
+        x: 100
+        y: 65
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-75,-80,-40,-20,0,2.5,5,10,10]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,7,7,7,7,7,7,7,0]
+      height: [0,7,7,7,7,7,7,7,0]
+      texture: [4,63,3,3,3,3,3,4]
+      angle: 2
+      laser:
+        damage: [4,6]
+        rate: 6
+        type: 1
+        speed: [170,190]
+        number: 1
+    guns2:
+      section_segments: 12
+      offset:
+        x: 115
+        y: 65
+        z: 10
+      position:
+        x: [0,0,-15,-15,-15,-15,-15,-15,-15]
+        y: [-75,-80,-40,-20,0,2.5,5,10,10]
+        z: [0,0,-3.75,-7.5,-15,-15,-15,-15,-15]
+      width: [0,7,7,7,7,7,7,7,0]
+      height: [0,7,7,7,7,7,7,7,0]
+      texture: [4,63,3,3,3,3,3,4]
+      angle: 4
+      laser:
+        damage: [4,6]
+        rate: 6
+        type: 1
+        speed: [170,190]
+        number: 1
+    guns3:
+      section_segments: 12
+      offset:
+        x: 145
+        y: 70
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-75,-80,-40,-20,0,2.5,5,10,10]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,20,0]
+      height: [0,20,20,20,20,20,20,20,0]
+      texture: [4,63,3,3,3,3,3,4]
+      angle: 6
+      laser:
+        damage: [13,17]
+        rate: 1
+        type: 2
+        speed: [155,175]
+        number: 1
+    propellers2:
+      section_segments: 12
+      offset:
+        x: 145
+        y: 94
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-15,-15,-7.5,-3.75,0,2.5,5,10,5]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,15,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 0
+        y: -50
+        z: 0
+      length: [100,30]
+      width: [160,30,90]
+      angle: [0,0,0]
+      position: [50,115,90]
+      texture: 3
+      bump:
+        position: 30
+        size: 20

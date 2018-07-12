@@ -1,0 +1,164 @@
+return model =
+  name: 'Shai'
+  level: 4
+  model: 1
+  size: 1
+  specs:
+    shield:
+      capacity: [170,220]
+      reload: [6,9]
+    generator:
+      capacity: [90,130]
+      reload: [33,53]
+    ship:
+      mass: 250
+      speed: [110,145]
+      rotation: [50,80]
+      acceleration: [80,115]
+  tori: circle:
+    segments: 20
+    radius: 95
+    section_segments: 12
+    offset:
+      x: -45
+      y: -200
+      z: 0
+    position:
+      x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      y: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      z: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    width: [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]
+    height: [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
+    texture: [3,3,3,3,63,63,3,3,3,3,2,2,2,2,63,63,2,2,2,2]
+  bodies:
+    main:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-250,-250,-150,-80,0,80,150,250,250]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,50,40,40,40,40,40,40,0]
+      height: [0,50,40,40,40,40,40,40,0]
+      texture: [1,63,1,63,1,63,1]
+      propeller: false
+    engines1:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 200
+        z: 80
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-30,-15,0,15,30,50,30]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,40,40,40,40,40,40,40,0]
+      height: [0,40,40,40,40,40,40,40,0]
+      texture: [2,2,2,2,2,2,2,17]
+      propeller: true
+    engines2:
+      section_segments: 8
+      offset:
+        x: 60
+        y: 200
+        z: 40
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-30,-15,0,15,30,50,30]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,40,40,40,40,40,40,40,0]
+      height: [0,40,40,40,40,40,40,40,0]
+      texture: [2,2,2,2,2,2,2,17]
+      propeller: true
+    engines3:
+      section_segments: 8
+      offset:
+        x: 60
+        y: 200
+        z: -40
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-30,-15,0,15,30,50,30]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,40,40,40,40,40,40,40,0]
+      height: [0,40,40,40,40,40,40,40,0]
+      texture: [2,2,2,2,2,2,2,17]
+      propeller: true
+    engines4:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 200
+        z: -80
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-30,-15,0,15,30,50,30]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,40,40,40,40,40,40,40,0]
+      height: [0,40,40,40,40,40,40,40,0]
+      texture: [2,2,2,2,2,2,2,17]
+      propeller: true
+    cannon:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -350
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-85,-100,-75,-50,0,50,75,100,100]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,40,40,40,40,40,40,50,0]
+      height: [0,40,40,40,40,40,40,50,0]
+      texture: [1,63,1,63,1,63,1]
+      propeller: false
+      laser:
+        damage: [30,50]
+        rate: 2
+        type: 2
+        speed: [190,220]
+        number: 1
+        recoil: 150
+        error: 0
+    cockpitsupport1:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -358
+        z: 60
+      position:
+        x: [0,0,0,0]
+        y: [-65,-65,-45,-45]
+        z: [0,0,0,0]
+      width: [0,16,16,0]
+      height: [0,40,40,0]
+      texture: [1]
+    cockpitsupport2:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -348
+        z: 92
+      position:
+        x: [0,0,0,0]
+        y: [-102,-102,-22,-22]
+        z: [0,0,0,0]
+      width: [0,20,20,0]
+      height: [0,13,13,0]
+      texture: [1]
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -410
+        z: 103
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-40,-20,0,30,40]
+        z: [0,0,0,0,0]
+      width: [0,20,22,18,0]
+      height: [0,20,22,18,0]
+      texture: [9]

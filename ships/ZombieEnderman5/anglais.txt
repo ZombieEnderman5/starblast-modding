@@ -1,0 +1,186 @@
+return model =
+  name: 'Anglais'
+  level: 5
+  model: 5
+  size: 1
+  specs:
+    shield:
+      capacity: [300,350]
+      reload: [6,8]
+    generator:
+      capacity: [145,225]
+      reload: [70,90]
+    ship:
+      mass: 215
+      speed: [95,115]
+      rotation: [65,85]
+      acceleration: [90,135]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-240,-200,-120,-65,0,50,145,200,190]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,40,40,40,40,40,40,40,0]
+      height: [0,40,40,40,40,40,40,40,0]
+      texture: [63,1,42,1,1,1,42,17]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -220
+        z: 90
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-20,-10,0,30,40]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,10,10,0]
+      height: [0,10,15,12,0]
+      texture: 9
+    guns1:
+      section_segments: 8
+      offset:
+        x: 210
+        y: -90
+        z: 20
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-15,-20,-20,0,40,40,35]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,10,10,7,7,0]
+      height: [0,10,10,10,7,7,0]
+      texture: [1,1,63,1,17]
+      propeller: true
+      laser:
+        damage: [6,9]
+        rate: 8
+        type: 1
+        speed: [190,220]
+        number: 1
+    guns2:
+      section_segments: 8
+      offset:
+        x: 240
+        y: 170
+        z: -10
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-15,-20,-20,0,40,40,35]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,10,10,7,7,0]
+      height: [0,10,10,10,7,7,0]
+      texture: [1,1,63,1,17]
+      propeller: true
+      laser:
+        damage: [6,9]
+        rate: 8
+        type: 1
+        speed: [190,220]
+        number: 1
+    guns3:
+      section_segments: 8
+      offset:
+        x: 50
+        y: -220
+        z: 15
+      position:
+        x: [0,0,0,0,-25,-25,-25]
+        y: [-15,-20,-20,0,40,40,40]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,0]
+      texture: [1,1,63,1]
+      laser:
+        damage: [6,9]
+        rate: 8
+        type: 1
+        speed: [190,220]
+        number: 1
+    cockpitsupports1:
+      section_segments: 12
+      offset:
+        x: 80
+        y: -115
+        z: 47
+      position:
+        x: [0,0,0,0]
+        y: [-60,-60,-50,-50]
+        z: [0,0,0,0]
+      width: [0,16,16,0]
+      height: [0,40,40,0]
+      texture: 1
+    cockpitsupports2:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -105
+        z: 85
+      position:
+        x: [0,0,0,0]
+        y: [-80,-80,-50,-50]
+        z: [0,0,0,0]
+      width: [0,100,100,0]
+      height: [0,10,10,0]
+      texture: 1
+    cockpitsupports3:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -180
+        z: 85
+      position:
+        x: [0,0,0,0]
+        y: [-60,-60,0,0]
+        z: [0,0,0,0]
+      width: [0,20,20,0]
+      height: [0,10,10,0]
+      texture: 1
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 0
+        y: 165
+        z: -10
+      length: [95,150]
+      width: [50,40,30]
+      angle: [0,0]
+      position: [0,10,20]
+      texture: [42,1]
+      bump:
+        position: 10
+        size: 20
+    wing2:
+      doubleside: true
+      offset:
+        x: 0
+        y: -100
+        z: 20
+      length: [64,150]
+      width: [50,40,30]
+      angle: [0,0]
+      position: [0,10,20]
+      texture: [42,1]
+      bump:
+        position: 10
+        size: 20
+    wing3:
+      doubleside: true
+      offset:
+        x: 0
+        y: -180
+        z: 10
+      length: [70,30]
+      width: [50,40,30]
+      angle: [0,0]
+      position: [0,10,20]
+      texture: [42,1]
+      bump:
+        position: 10
+        size: 20

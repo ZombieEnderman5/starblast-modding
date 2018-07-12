@@ -1,0 +1,100 @@
+return model =
+  name: 'Chais'
+  level: 6
+  model: 3
+  size: 2.7
+  specs:
+    shield:
+      capacity: [270,370]
+      reload: [5.5,7.5]
+    generator:
+      capacity: [160,320]
+      reload: [80,100]
+    ship:
+      mass: 300
+      speed: [75,95]
+      rotation: [60,80]
+      acceleration: [90,140]
+  bodies:
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -75
+        z: 8
+      position:
+        x: [0,0,0,0]
+        y: [15,37,85]
+        z: [-4,-2,0]
+      width: [5,8,14]
+      height: [0,8,8]
+      texture: [9]
+    gun:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 21
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-75,-80,-60,-20,0,12.5,25,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,15,20,20,20,20,0]
+      height: [0,5,10,15,20,20,20,8,0]
+      texture: [2,63,42,1,1,1,1,2]
+      laser:
+        damage: [7,12]
+        rate: 8
+        type: 1
+        speed: [150,200]
+        number: 1
+        error: 0
+    curved_cannons:
+      section_segments: 12
+      offset:
+        x: 100
+        y: 0
+        z: 0
+      position:
+        x: [-45,-45,-22.5,-11.25,-5.625,-11.25,-22.5,-100,-100]
+        y: [-75,-80,-40,-20,0,20,40,80,80]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [2,63,1,1,1,1,1,2]
+      laser:
+        damage: [50,80]
+        rate: 2
+        type: 2
+        speed: [135,185]
+        recoil: 100
+        number: 1
+        error: 0
+    propellers1:
+      section_segments: 12
+      offset:
+        x: 80
+        y: 80
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-25,-12.5,0,12.5,25,50,40]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,20,0]
+      height: [0,8,20,20,20,20,20,20,0]
+      texture: [2,1,63,63,63,63,12,17]
+      propeller: true
+    propellers2:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 120
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-50,-50,-25,-12.5,0,12.5,25,50,40]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,40,25,20,20,20,20,20,0]
+      height: [0,8,20,20,20,20,20,20,0]
+      texture: [2,1,63,63,63,63,12,17]
+      propeller: true

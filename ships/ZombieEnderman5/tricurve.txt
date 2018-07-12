@@ -1,0 +1,160 @@
+return model =
+  name: 'Tricurve'
+  level: 6
+  model: 5
+  size: 1.5
+  specs:
+    shield:
+      capacity: [250,370]
+      reload: [7,9]
+    generator:
+      capacity: [360,500]
+      reload: [190,210]
+    ship:
+      mass: 320
+      speed: [65,95]
+      rotation: [50,70]
+      acceleration: [90,135]
+  bodies:
+    cockpit:
+      section_segments: 10
+      offset:
+        x: 0
+        y: -265
+        z: 30
+      position:
+        x: [0,0,0,0]
+        y: [20,40,80]
+        z: [-4,-6,-4]
+      width: [10,15,15]
+      height: [0,8,0]
+      texture: 9
+    propellers1:
+      section_segments: 12
+      offset:
+        x: 150
+        y: 50
+        z: 0
+      position:
+        x: [-150,-150,-50,-25,-12.5,0,0,0,0]
+        y: [-100,-100,-50,-25,0,25,50,100,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,30,30,30,30,30,30,30,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+    propellers2:
+      section_segments: 12
+      offset:
+        x: 80
+        y: 10
+        z: 0
+      position:
+        x: [-80,-80,-40,-20,-10,0,0,0,0]
+        y: [-50,-50,-25,-12.5,0,25,50,100,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,20,0]
+      height: [0,20,20,20,20,20,20,20,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+    propellers3:
+      section_segments: 12
+      offset:
+        x: 35
+        y: -10
+        z: 0
+      position:
+        x: [-35,-35,-15,-15,-15,-7.5,0,0,0]
+        y: [-15,-15,-5,-3.5,0,25,50,100,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+    guns1:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -150
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-90,-100,-50,-25,0,25,50,100,100]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,30,30,30,30,30,30,30,0]
+      texture: [4,63,3,3,3,3,3,4]
+      laser:
+        damage: [30,50]
+        rate: 2
+        type: 2
+        speed: [150,200]
+        recoil: 25
+        number: 1
+        error: 0
+    guns2:
+      section_segments: 12
+      offset:
+        x: 100
+        y: -115
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-90,-100,-50,-25,0,25,50,100,100]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,30,30,30,30,30,30,30,0]
+      height: [0,30,30,30,30,30,30,28,0]
+      texture: [4,63,3,3,3,3,3,4]
+      angle: -20
+      laser:
+        damage: [30,50]
+        rate: 2
+        type: 2
+        speed: [150,200]
+        recoil: 25
+        number: 1
+        error: 0
+    guns3:
+      section_segments: 12
+      offset:
+        x: 170
+        y: -80
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-90,-100,-50,-25,0,25,50,100,100]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,20,20,20,20,20,20,0]
+      height: [0,20,20,20,20,20,20,20,0]
+      texture: [4,63,3,3,3,3,3,4]
+      angle: -25
+      laser:
+        damage: [22.5,37.5]
+        rate: 2.5
+        type: 2
+        speed: [160,210]
+        recoil: 18.75
+        number: 1
+        error: 0
+    guns4:
+      section_segments: 12
+      offset:
+        x: 210
+        y: -30
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-95,-100,-50,-25,0,25,50,100,100]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,15,15,15,15,15,15,0]
+      height: [0,15,15,15,15,15,15,15,0]
+      texture: [4,63,3,3,3,3,3,4]
+      angle: -30
+      laser:
+        damage: [15,25]
+        rate: 3
+        type: 2
+        speed: [170,220]
+        recoil: 12.5
+        number: 1
+        error: 0

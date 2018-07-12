@@ -1,0 +1,129 @@
+return model =
+  name: 'Glaive'
+  level: 5
+  model: 16
+  size: 1.5
+  specs:
+    shield:
+      capacity: [190,245]
+      reload: [5,7]
+    generator:
+      capacity: [130,230]
+      reload: [65,80]
+    ship:
+      mass: 180
+      speed: [85,115]
+      rotation: [65,85]
+      acceleration: [110,130]
+  bodies:
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -175
+        z: 15
+      position:
+        x: [0,0,0,0]
+        y: [20,40,80]
+        z: [-4,0,5]
+      width: [5,10,5]
+      height: [0,8,0]
+      texture: 9
+    cannon:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -80
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-70,-80,-40,-20,0,12.5,25,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,20,20,20,20,20,20,0]
+      height: [0,10,20,20,20,20,20,6,0]
+      texture: [2,63,43,43,43,43,43,2]
+      laser:
+        damage: [20,35]
+        rate: 4
+        type: 2
+        speed: [130,180]
+        number: 1
+        error: 0
+    side_guns:
+      section_segments: 12
+      offset:
+        x: 130
+        y: 10
+        z: 3
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-45,-50,-25,-12.5,0,12.5,25,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,0,0]
+      texture: [2,63,43,43,43,43,43,2]
+      angle: 3
+      laser:
+        damage: [7,10]
+        rate: 7
+        type: 1
+        speed: [150,200]
+        number: 1
+        error: 0
+    engines1:
+      section_segments: 12
+      offset:
+        x: 80
+        y: 60
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-60,-45,-22.5,-11.25,0,6.25,12.5,25,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [1,42,1,1,1,1,63,17]
+      propeller: true
+    engines2:
+      section_segments: 12
+      offset:
+        x: 55
+        y: 60
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-100,-85,-42.5,-21.25,0,6.25,12.5,25,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [1,42,1,1,1,1,63,17]
+      propeller: true
+    engines3:
+      section_segments: 12
+      offset:
+        x: 30
+        y: 60
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-130,-115,-57.5,-28.75,0,6.25,12.5,25,20]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [1,42,1,1,1,1,63,17]
+      propeller: true
+  wings:
+    main:
+      doubleside: true
+      offset:
+        x: 0
+        y: -25
+        z: 0
+      length: [100,42.5]
+      width: [120,30,40]
+      angle: [0,5]
+      position: [0,100,85]
+      texture: 1
+      bump:
+        position: 30
+        size: 10
