@@ -1,0 +1,123 @@
+return model =
+  name: 'Menace'
+  level: 6
+  model: 23
+  size: 3
+  specs:
+    shield:
+      capacity: [290,400]
+      reload: [7,9]
+    generator:
+      capacity: [160,200]
+      reload: [80,120]
+    ship:
+      mass: 360
+      speed: [60,90]
+      rotation: [50,70]
+      acceleration: [100,120]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-97,-100,-50,-25,0,25,50,100,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,15,20,20,20,20,0]
+      height: [0,5,10,15,20,20,20,20,0]
+      texture: [2,63,1,1,1,1,63,17]
+      propeller: true
+      laser:
+        damage: [5,8]
+        rate: 6
+        type: 1
+        speed: [160,190]
+        number: 1
+        error: 0
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -100
+        z: 10
+      position:
+        x: [0,0,0,0]
+        y: [0,40,80]
+        z: [-4,-6,6]
+      width: [3,7,10]
+      height: [0,6,0]
+      texture: [9]
+    cannons1:
+      section_segments: 12
+      offset:
+        x: 40
+        y: -40
+        z: 0
+      position:
+        x: [0,0,0,0,0,-7.5,-15,-30,-30]
+        y: [-47,-50,-25,-12.5,0,12.5,25,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,15,15,15,15,15,0]
+      height: [0,5,10,15,15,15,15,15,0]
+      texture: [2,63,1,1,1,1,1,2]
+      angle: -10
+      laser:
+        damage: [5,8]
+        rate: 6
+        type: 1
+        speed: [160,190]
+        number: 1
+        error: 0
+    cannons2:
+      section_segments: 12
+      offset:
+        x: 70
+        y: -30
+        z: 0
+      position:
+        x: [0,0,0,0,-6.25,-12.5,-25,-50,-50]
+        y: [-47,-50,-25,-12.5,0,12.5,25,50,50]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,15,15,15,15,15,0]
+      height: [0,5,10,15,15,15,15,15,0]
+      texture: [2,63,1,1,1,1,1,2]
+      angle: -20
+      laser:
+        damage: [5,8]
+        rate: 6
+        type: 1
+        speed: [160,190]
+        number: 1
+        error: 0
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 15
+        y: 20
+        z: 8
+      length: [40,50]
+      width: [30,30,10]
+      angle: [-10,45]
+      position: [0,0,-10]
+      texture: 1
+      bump:
+        position: 0
+        size: 5
+    wing2:
+      doubleside: true
+      offset:
+        x: 15
+        y: 84
+        z: 10
+      length: [25,130]
+      width: [30,30,10]
+      angle: [30,60]
+      position: [0,0,0]
+      texture: 1
+      bump:
+        position: 0
+        size: 10

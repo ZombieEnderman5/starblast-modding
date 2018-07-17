@@ -1,0 +1,109 @@
+return model =
+  name: 'Finnais' #I considered calling this Pothead because its headpiece looks like a bowl or pot if you view it from the hitbox piece of the ship editor
+  level: 6
+  model: 25
+  size: 2.3
+  specs:
+    shield:
+      capacity: [280,360]
+      reload: [5.5,7.5]
+    generator:
+      capacity: [130,230]
+      reload: [70,100]
+    ship:
+      mass: 340
+      speed: [80,105]
+      rotation: [50,70]
+      acceleration: [70,100]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-100,-100,-50,-25,0,25,50,100,95]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,20,30,30,30,30,30,30,0]
+      height: [0,0,20,20,20,20,20,15,0]
+      texture: [4,3,3,3,3,3,63,17]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 93
+        z: 10
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-50,-40,-25,0,5]
+        z: [8,5,0,0,9,9]
+      width: [0,10,15,10,0]
+      height: [0,10,15,15,0]
+      texture: 9
+    guns:
+      section_segments: 12
+      offset:
+        x: 40
+        y: -60
+        z: 0
+      position:
+        x: [0,0,0,-5,-10,-10,-11.5,-23,-23]
+        y: [-35,-40,-20,-10,0,10,20,40,40]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,10,10,10,10,10,10,10,0]
+      height: [0,10,10,10,10,10,10,10,0]
+      texture: [4,3,3,3,3,3,3,4]
+      laser:
+        damage: [20,40]
+        rate: 4
+        type: 2
+        speed: [185,235]
+        recoil: 120
+        number: 1
+        error: 0
+  wings:
+    wing1:
+      doubleside: true
+      offset:
+        x: 30
+        y: 30
+        z: 0
+      length: [130,40]
+      width: [30,30,15]
+      angle: [40,110]
+      position: [0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 10
+    wing2:
+      doubleside: true
+      offset:
+        x: 150
+        y: 30
+        z: 25
+      length: [0,40,40,40]
+      width: [0,15,30,30,15]
+      angle: [0,120,120,120]
+      position: [0,0,0,0,0]
+      texture: 3
+      bump:
+        position: 0
+        size: 10
+    wing3:
+      doubleside: true
+      offset:
+        x: 30
+        y: 60
+        z: -1
+      length: [30]
+      width: [70,30]
+      angle: [90]
+      position: [0,30,0,0]
+      texture: 1
+      bump:
+        position: 10
+        size: 0
